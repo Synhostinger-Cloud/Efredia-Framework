@@ -6,5 +6,7 @@
 - Fichier de configuration dans le /Controllers/
 
 Models => Template CSS / Images & JS
+
 View => Page HTML avec le contenu
+
 Controllers => Système de configuration et création des liens
