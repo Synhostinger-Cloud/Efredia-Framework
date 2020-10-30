@@ -1,0 +1,379 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6233C74-FDE6-4F58-A84C-8B21FD17BC67}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication11</RootNamespace>
+    <AssemblyName>WebApplication11</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44379</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="Sql" Order="1" Enabled="False">
+          <Destination Path="Data Source=%28LocalDB%29\MSSQLLocalDB%3bAttachDbFilename=C:\Users\bastien\source\repos\WebApplication11\WebApplication11\App_Data\register.mdf%3bIntegrated Security=True%3bConnect Timeout=30" />
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cart\product-project.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="maintenance.aspx" />
+    <Content Include="Models\hosting2019\css\animate.css" />
+    <Content Include="Models\hosting2019\css\bootstrap.min.css" />
+    <Content Include="Models\hosting2019\css\font-awesome.min.css" />
+    <Content Include="Models\hosting2019\css\magnific-popup.css" />
+    <Content Include="Models\hosting2019\css\owl.carousel.min.css" />
+    <Content Include="Models\hosting2019\css\style.css" />
+    <Content Include="Models\hosting2019\icon-fonts\fontawesome-webfont.svg" />
+    <Content Include="Models\hosting2019\img\about-intro.jpg" />
+    <Content Include="Models\hosting2019\img\about.png" />
+    <Content Include="Models\hosting2019\img\add.jpg" />
+    <Content Include="Models\hosting2019\img\banner-bg.jpg" />
+    <Content Include="Models\hosting2019\img\bg.jpg" />
+    <Content Include="Models\hosting2019\img\blog-posts\1.jpg" />
+    <Content Include="Models\hosting2019\img\blog-posts\2.jpg" />
+    <Content Include="Models\hosting2019\img\blog-posts\3.jpg" />
+    <Content Include="Models\hosting2019\img\contact-icons\1.png" />
+    <Content Include="Models\hosting2019\img\contact-icons\2.png" />
+    <Content Include="Models\hosting2019\img\contact-icons\3.png" />
+    <Content Include="Models\hosting2019\img\default.aspx" />
+    <Content Include="Models\hosting2019\img\favicon.ico" />
+    <Content Include="Models\hosting2019\img\feature-icons\1.png" />
+    <Content Include="Models\hosting2019\img\feature-icons\2.png" />
+    <Content Include="Models\hosting2019\img\feature-icons\3.png" />
+    <Content Include="Models\hosting2019\img\logo.png" />
+    <Content Include="Models\hosting2019\img\milestone-icons\1.png" />
+    <Content Include="Models\hosting2019\img\milestone-icons\2.png" />
+    <Content Include="Models\hosting2019\img\milestone-icons\3.png" />
+    <Content Include="Models\hosting2019\img\milestone-icons\4.png" />
+    <Content Include="Models\hosting2019\img\page-top-bg\1.jpg" />
+    <Content Include="Models\hosting2019\img\page-top-bg\2.jpg" />
+    <Content Include="Models\hosting2019\img\page-top-bg\3.jpg" />
+    <Content Include="Models\hosting2019\img\page-top-bg\4.jpg" />
+    <Content Include="Models\hosting2019\img\pattern.png" />
+    <Content Include="Models\hosting2019\img\pricing-icons\1.png" />
+    <Content Include="Models\hosting2019\img\pricing-icons\2.png" />
+    <Content Include="Models\hosting2019\img\pricing-icons\3.png" />
+    <Content Include="Models\hosting2019\img\service-bg.jpg" />
+    <Content Include="Models\hosting2019\img\service-circle-pic.png" />
+    <Content Include="Models\hosting2019\img\service-icons\1.png" />
+    <Content Include="Models\hosting2019\img\service-icons\2.png" />
+    <Content Include="Models\hosting2019\img\service-icons\3.png" />
+    <Content Include="Models\hosting2019\img\service-icons\4.png" />
+    <Content Include="Models\hosting2019\img\service-icons\5.png" />
+    <Content Include="Models\hosting2019\img\service-icons\6.png" />
+    <Content Include="Models\hosting2019\img\synhicon_color.ico" />
+    <Content Include="Models\hosting2019\img\testimonials\1.jpg" />
+    <Content Include="Models\hosting2019\img\what-bg.jpg" />
+    <Content Include="Models\hosting2019\img\what\1.jpg" />
+    <Content Include="Models\hosting2019\img\what\2.jpg" />
+    <Content Include="Models\hosting2019\img\what\3.jpg" />
+    <Content Include="Models\hosting2019\js\bootstrap.min.js" />
+    <Content Include="Models\hosting2019\js\circle-progress.min.js" />
+    <Content Include="Models\hosting2019\js\default.aspx" />
+    <Content Include="Models\hosting2019\js\jquery-3.2.1.min.js" />
+    <Content Include="Models\hosting2019\js\jquery.magnific-popup.min.js" />
+    <Content Include="Models\hosting2019\js\main.js" />
+    <Content Include="Models\hosting2019\js\owl.carousel.min.js" />
+    <Content Include="Models\hosting2019\icon-fonts\fontawesome-webfont.eot" />
+    <Content Include="Models\hosting2019\icon-fonts\fontawesome-webfont.woff" />
+    <Content Include="Models\hosting2019\icon-fonts\fontawesome-webfont.woff2" />
+    <Content Include="Models\hosting2019\Source\bootstrap-4.1.3-dist.zip" />
+    <Content Include="Models\hosting2019\Source\default.aspx" />
+    <Content Include="Models\hosting2019\Source\font-awesome-4.7.0.zip" />
+    <Content Include="Models\hosting2019\Source\jquery-circle-progress-1.2.2.tar.gz" />
+    <Content Include="Models\hosting2019\Source\Magnific-Popup-master.zip" />
+    <Content Include="Models\hosting2019\Source\OwlCarousel2-2.3.4.zip" />
+    <Content Include="Models\hosting2019\Source\sass\style.scss" />
+    <Content Include="Models\hosting2019\default.aspx" />
+    <Content Include="Models\web2020\assets\css\font-awesome.min.css" />
+    <Content Include="Models\web2020\assets\css\main.css" />
+    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Models\web2020\assets\js\jquery.min.js" />
+    <Content Include="Models\web2020\assets\js\main.js" />
+    <Content Include="Models\web2020\assets\js\skel.min.js" />
+    <Content Include="Models\web2020\assets\js\util.js" />
+    <Content Include="Models\web2020\images\banner.jpg" />
+    <Content Include="Models\web2020\images\logo.png" />
+    <Content Include="Models\web2020\images\pic01.jpg" />
+    <Content Include="Models\web2020\images\pic02.jpg" />
+    <Content Include="Models\web2020\images\pic03.jpg" />
+    <Content Include="Models\web2020\images\pic04.jpg" />
+    <Content Include="Models\web2020\images\pic05.jpg" />
+    <Content Include="Models\web2020\images\pic06.jpg" />
+    <Content Include="Models\web2020\index.html" />
+    <Content Include="synhicon_color.ico" />
+    <Content Include="TextTemplate.ico" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="cart\product-project.aspx.cs">
+      <DependentUpon>product-project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart\product-project.aspx.designer.cs">
+      <DependentUpon>product-project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HomeController.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Controllers\ServicesController.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="maintenance.aspx.cs">
+      <DependentUpon>maintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maintenance.aspx.designer.cs">
+      <DependentUpon>maintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspx\Maintenance.Master.cs">
+      <DependentUpon>Maintenance.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\aspx\Maintenance.Master.designer.cs">
+      <DependentUpon>Maintenance.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspx\redirect_302.Master.cs">
+      <DependentUpon>redirect_302.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\aspx\redirect_302.Master.designer.cs">
+      <DependentUpon>redirect_302.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hosting2019\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\hosting2019\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hosting2019\img\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\hosting2019\img\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hosting2019\js\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\hosting2019\js\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hosting2019\Source\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\hosting2019\Source\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspx\store.Master.cs">
+      <DependentUpon>store.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\aspx\store.Master.designer.cs">
+      <DependentUpon>store.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Models\web2020\assets\fonts\FontAwesome.otf" />
+    <Content Include="Models\aspx\redirect_302.Master" />
+    <Content Include="Models\aspx\Maintenance.Master" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Home\About.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <Content Include="Views\Home\Contact.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Home\ProcessRequest.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Home\Project.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Services\Finish.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
+    <Content Include="Views\Home\Error.cshtml" />
+    <Content Include="Models\aspx\store.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Browsers\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\" />
+    <Folder Include="Models\Maintenance\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>synhicon_color.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51442</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51442/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

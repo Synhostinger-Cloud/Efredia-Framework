@@ -1,0 +1,33 @@
+﻿<!--
+##########################################################
+#     ___         __                                     #
+#    /   |  _____/ /_  ______                            #
+#   / /| | / ___/ / / / / __ \                           #
+#  / ___ |(__  ) / /_/ / / / /                           #
+# /_/  |_/____/_/\__,_/_/ /_/                            #
+#                                                        #
+# Développeur multi-platerformes                         #
+# Twitter : https://twitter.com/b_languedoc              #
+##########################################################
+    -->
+
+<!doctype html>
+
+<style>
+  body { text-align: center; padding: 150px; }
+  h1 { font-size: 50px; }
+  body { font: 20px Helvetica, sans-serif; color: #333; }
+  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+  a { color: #dc8100; text-decoration: none; }
+  a:hover { color: #333; text-decoration: none; }
+</style>
+<head runat="server">
+<title>Site Maintenance</title>
+ <link href="/Models/hosting2019/img/synhicon_color.ico" rel="shortcut icon" />
+</head>
+<body>
+
+<asp:contentplaceholder id="article"
+                 runat="server">
+</asp:contentplaceholder>
+</body>
