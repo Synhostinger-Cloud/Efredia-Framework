@@ -129,18 +129,18 @@ namespace WebApplication11
             string disque = Label6.Text;
             string rootpassword = TextBox3.Text;
             string os = RadioButtonList1.Text;
-            var mailpro = Request["bastien@languedoc.ovh"];
+            var mailpro = Request["email@email.fr"];
             var errorMessage = "";
             try
             {
                 // Paramétre SMTP pour l'envoi du mail
                 WebMail.SmtpServer = "109.190.208.17";
                 WebMail.SmtpPort = 25;
-                WebMail.UserName = "bastien@languedoc.ovh";
-                WebMail.Password = "Bas160698";
-                WebMail.From = "bastien@languedoc.ovh";
+                WebMail.UserName = "email@email.fr";
+                WebMail.Password = "password";
+                WebMail.From = "email@email.fr";
                 WebMail.EnableSsl = false;
-                WebMail.Send(to: "bastien@languedoc.ovh",
+                WebMail.Send(to: "email@email.fr",
                 // Envoi du mail avec les variables
                 subject: "Email de  - " + prenom,
                 body: "email : " + email + " Mot de passe root : " + rootpassword + " Os : " + os + " Type disque : " + disque
@@ -149,11 +149,11 @@ namespace WebApplication11
                 // Paramétre SMTP pour l'envoi du mail vers client
                 WebMail.SmtpServer = "109.190.208.17";
                 WebMail.SmtpPort = 25;
-                WebMail.UserName = "bastien@languedoc.ovh";
-                WebMail.Password = "Bas160698";
-                WebMail.From = "bastien@languedoc.ovh";
+                WebMail.UserName = "email@email.fr";
+                WebMail.Password = "password";
+                WebMail.From = "email@email.fr";
                 WebMail.EnableSsl = false;
-                WebMail.Send(to: "bastien@languedoc.ovh",
+                WebMail.Send(to: "email@email.fr",
                 // Envoi du mail avec les variables
                 isBodyHtml: true,
                 subject: "Commande en cours  - Languedoc-Network",
@@ -189,11 +189,11 @@ namespace WebApplication11
                 // Paramétre SMTP pour l'envoi du mail
                 WebMail.SmtpServer = "109.190.208.17";
                 WebMail.SmtpPort = 25;
-                WebMail.UserName = "bastien@languedoc.ovh";
-                WebMail.Password = "Bas160698";
-                WebMail.From = "bastien@languedoc.ovh";
+                WebMail.UserName = "email@email.fr";
+                WebMail.Password = "password";
+                WebMail.From = "email@email.fr";
                 WebMail.EnableSsl = false;
-                WebMail.Send(to: "bastien@languedoc.ovh",
+                WebMail.Send(to: "email@email.fr",
                 // Envoi du mail avec les variables
                 subject: "Email de  - " + prenom,
                 body: "email : " + email + " Nom de domaine : " + ndd

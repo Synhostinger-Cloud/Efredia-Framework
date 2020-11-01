@@ -12,7 +12,21 @@
     -->
 
 <!doctype html>
-
+<head runat="server">
+<title>Site Maintenance</title>
+<link href="/Models/hosting2019/img/synhicon_color.ico" rel="shortcut icon" />
+<meta charset="utf-8" />
+<meta name="robots" content="index, follow" />
+<meta property="og:site_name" content="Synhostinger" />
+<link rel="canonical" href="https://www.synhostinger.com" />
+<meta name="description" content="Notre site internet est pour le moment en maintenance dans le but d'améliorer votre expérience utilisateur : vous pouvez nous rejoindre sur Discord" />
+<meta name="twitter:site" content="@synhostinger_fr" />
+<meta property="og:url" content="https://www.synhostinger.com" />
+<meta property="og:title" content="Synhostinger Maintenance" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 <style>
   body { text-align: center; padding: 150px; }
   h1 { font-size: 50px; }
@@ -21,10 +35,7 @@
   a { color: #dc8100; text-decoration: none; }
   a:hover { color: #333; text-decoration: none; }
 </style>
-<head runat="server">
-<title>Site Maintenance</title>
- <link href="/Models/hosting2019/img/synhicon_color.ico" rel="shortcut icon" />
-</head>
+
 <body>
 
 <asp:contentplaceholder id="article"
