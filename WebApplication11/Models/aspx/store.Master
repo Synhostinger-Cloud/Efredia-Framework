@@ -92,27 +92,17 @@
                 <br />
                 <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged1" TextMode="Email" required="required" Visible="False"></asp:TextBox>
             <br />
-&nbsp;<asp:Label ID="Label3" runat="server" Text="Root Password" Visible="False"></asp:Label>
+&nbsp;<asp:Label ID="Label3" runat="server" Text="Détail de votre projet" Visible="False"></asp:Label>
             <br />
-                <asp:TextBox ID="TextBox3" runat="server" TextMode="Password" required="required" OnTextChanged="TextBox3_TextChanged1" Visible="False"></asp:TextBox>
+                <asp:TextBox ID="project_details" runat="server" TextMode="MultiLine" required="required" OnTextChanged="TextBox3_TextChanged1" Height="139px" Visible="False" Width="441px"></asp:TextBox>
+                <br />
+                Produit :
+                <asp:Label ID="Label21" runat="server" Text="Label"></asp:Label>
                 <br />
                 <br />
-                <asp:Label ID="Label5" runat="server" Text="Type de disque :" Visible="False"></asp:Label>
-                &nbsp;<asp:Label ID="Label6" runat="server" Text="Label" Visible="False"></asp:Label>
-                <br />
-                <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Valider" Visible="False" Width="78px" />
+                <asp:Button ID="Button4" runat="server" OnClick="Button4_Click1" Text="Validation" />
             <br />
-&nbsp;<asp:Label ID="Label4" runat="server" Text="Système d'exploitation" Visible="False"></asp:Label>
-                <br />
-                <asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged1" required="required" Visible="False" Width="154px">
-                    <asp:ListItem Value="Debian_9"> Debian 9</asp:ListItem>
-                     <asp:ListItem Value="Debian_10"> Debian 10</asp:ListItem>
-                    <asp:ListItem Value="Ubuntu_20_04"> Ubuntu 20.04</asp:ListItem>
-                    <asp:ListItem Value="CentOS_7"> CentOS 7</asp:ListItem>
-                     <asp:ListItem Value="CentOS_8"> CentOS 8</asp:ListItem>
-                </asp:RadioButtonList>
-                <br />
-                <asp:Button ID="Button3" runat="server" Text="Valider" OnClick="Button3_Click" Visible="False" Width="93px" />
+&nbsp;<br />
                 <br />
                 <br />
             </center>

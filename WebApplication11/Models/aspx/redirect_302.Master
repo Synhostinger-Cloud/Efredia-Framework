@@ -7,7 +7,7 @@
 # /_/  |_/____/_/\__,_/_/ /_/                            #
 #                                                        #
 # Développeur multi-platerformes                         #
-# Twitter : https://twitter.com/b_languedoc              #
+# Twitter : https://twitter.com/aslun_fr                 #
 ##########################################################
     -->
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="redirect_302.Master.cs" Inherits="WebApplication11.Site1" %>

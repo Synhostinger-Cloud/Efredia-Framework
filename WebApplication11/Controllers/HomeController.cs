@@ -67,6 +67,21 @@ namespace WebApplication11.Controllers
             return View();
         }
 
+        [Route("Contactus")]
+        public ActionResult requestvps()
+        {
+            ViewBag.Title = "Contact";
+            ViewBag.Project = "Synhostinger";
+            ViewBag.indepedanttitle = "Indépendant";
+            ViewBag.indepedant = "Synhostinger héberge tous ses services sur son réseau (AS212816)";
+            ViewBag.dellhptitle = "Serveur HP / Dell";
+            ViewBag.dellhp = "Synhostinger utilises du matériel de grand constructeur pour noous permettre de garantir la qualité de notre infrastructure.";
+            ViewBag.Replicationtitle = "Réplication";
+            ViewBag.Replication = "Nos sauvergardes se font uniquement sur des serveurs Français pour un respect total de vos données";
+            return View();
+        }
+
+
         [Route("Send")]
         // GET: Default
         public ActionResult ProcessRequest()
