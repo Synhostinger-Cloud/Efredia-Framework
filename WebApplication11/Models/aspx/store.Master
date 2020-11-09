@@ -114,18 +114,18 @@
 </body>
 
         
-    <!-- Footer top section -->
+   <!-- Footer top section -->
     <section class="footer-top-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <div class="footer-widget about-widget">
-                        <img src="/Models/hosting2019/img/logo.png" alt="">
-                        <p>Synhostinger futur société dans le domaine de l'hébergement Web, VPS, SQL et du Réseau. Indépendant nous disposons de ses propres serveurs Rack. 1er hébergeur indépendant de la ville de Beauvais chez Ovh Télécom </p>
+                        <img src="../Models/hosting2019/img/logo.png" alt="">
+                        <p>@ViewBag.Project futur société dans le domaine de l'hébergement Web, VPS, SQL et du Réseau. Indépendant Languedoc Network dispose de ses propres serveurs Rack. 1er hébergeur indépendant de la ville de Beauvais chez Ovh Télécom </p>
                         <div class="social-links">
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-pinterest"></i></a>
+                            <a href="~/redirect.aspx?fb=social"><i class="fa fa-facebook"></i></a>
+                            <a href="~/redirect.aspx?tw=social"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-dribbble"></i></a>
                             <a href="#"><i class="fa fa-behance"></i></a>
                             <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -136,10 +136,10 @@
                     <div class="footer-widget">
                         <h5 class="fw-title">Produits</h5>
                         <ul>
-                            <li><a href="#">Hébergement Web</a></li>
+                            <li><a href="~/card.aspx?web=product">Hébergement Web</a></li>
                             <li><a href="#">Revendeur Web</a></li>
-                            <li><a href="#">Serveur VPS</a></li>
-                            <li><a href="#">Serveur dédié</a></li>
+                            <li><a href="~/card.aspx?vps-hdd=product">Serveur VPS HDD</a></li>
+                            <li><a href="~/card.aspx?vps-ssd=product">Serveur VPS SSD</a></li>
                             <li><a href="#">Hébergement Web IIS</a></li>
                             <li><a href="#">Hébergement Web Nginx</a></li>
                             <li><a href="#">Hébergement Web Apache</a></li>
@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="footer-widget">
-                    <h5 class="fw-title">Synhostinger</h5>
+                    <h5 class="fw-title">@ViewBag.Project</h5>
                     <ul>
                         <font color="white">
                             <li>Siret : Aucun</li>
@@ -183,29 +183,29 @@
         <div class="container">
             <div class="footer-nav">
                 <ul>
-                    <li><a href="/Index">Accueil</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li><a href="/About">Qui sommes nous ?</a></li>
                     <li><a href="/Services">Nos services</a></li>
-                    <li><a href="/blog/">News</a></li>
+                    <li><a href="/">News</a></li>
                     <li><a href="/Contactus">Contact</a></li>
                 </ul>
             </div>
             <div class="copyright">
                 <p>
 
-                    Copyright &copy; Synhostinger  @DateTime.Now.Year All rights reserved
+                    Copyright &copy; @ViewBag.Project  @DateTime.Now.Year All rights reserved
                 </p>
                 </p>
             </div>
         </div>
     </footer>
 
-    <script src="/Models/hosting2019/js/jquery-3.2.1.min.js"></script>
-    <script src="/Models/hosting2019/js/bootstrap.min.js"></script>
-    <script src="/Models/hosting2019/js/owl.carousel.min.js"></script>
-    <script src="/Models/hosting2019/js/jquery.magnific-popup.min.js"></script>
-    <script src="/Models/hosting2019/js/circle-progress.min.js"></script>
-    <script src="/Models/hosting2019/js/main.js"></script>
+    <script src="../Models/hosting2019/js/jquery-3.2.1.min.js"></script>
+    <script src="../Models/hosting2019/js/bootstrap.min.js"></script>
+    <script src="../Models/hosting2019/js/owl.carousel.min.js"></script>
+    <script src="../Models/hosting2019/js/jquery.magnific-popup.min.js"></script>
+    <script src="../Models/hosting2019/js/circle-progress.min.js"></script>
+    <script src="../Models/hosting2019/js/main.js"></script>
 
 </body>
 </html>

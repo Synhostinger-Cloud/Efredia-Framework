@@ -1,0 +1,171 @@
+﻿@{
+    ViewBag.Project = "Synhostinger";
+}
+
+<!DOCTYPE html>
+<!--
+##########################################################
+#     ___         __                                     #
+#    /   |  _____/ /_  ______                            #
+#   / /| | / ___/ / / / / __ \                           #
+#  / ___ |(__  ) / /_/ / / / /                           #
+# /_/  |_/____/_/\__,_/_/ /_/                            #
+#                                                        #
+# Développeur multi-platerformes                         #
+# Twitter : https://twitter.com/aslun_fr                 #
+##########################################################
+    -->
+
+
+<html lang="fr">
+<head>
+    <title>@ViewBag.Project - @ViewBag.Title</title>
+    <meta name="description" content="L'association Synhostinger est une association de loi 1901 vous proposant de propulser vos projets à des tarifs attractif." />
+    <meta charset="UTF-8">
+    <meta name="keywords" content="cloud, hosting, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="../Models/hosting2019/img/synhicon_color.ico" rel="shortcut icon" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../Models/hosting2019/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Models/hosting2019/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../Models/hosting2019/css/magnific-popup.css" />
+    <link rel="stylesheet" href="../Models/hosting2019/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../Models/hosting2019/css/style.css" />
+    <link rel="stylesheet" href="../Models/hosting2019/css/animate.css" />
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="container">
+            <a href="/" class="site-logo">
+                <img src="../Models/hosting2019/img/logo.png" alt="logo">
+            </a>
+            <!-- Switch button -->
+            <div class="nav-switch">
+                <div class="ns-bar"></div>
+            </div>
+            <div class="header-right">
+                <ul class="main-menu">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/About">Info</a></li>
+                    <li><a href="/Project">Startup Program</a></li>
+                    <li><a href="/Contactus">Contact</a></li>
+                </ul>
+
+            </div>
+    </header>
+    <!-- Header section end -->
+    <!--Body-->
+    <!-- Page Top section -->
+    <section class="page-top-section set-bg" data-setbg="../Models/hosting2019/img/page-top-bg/1.jpg">
+        <div class="container">
+            <h2>@ViewBag.Title</h2>
+
+        </div>
+
+    </section>
+    <!-- Page Top section end -->
+
+    <div id="body">
+        @RenderSection("featured", required: false)
+        @RenderBody()
+
+    </div>
+
+    <!-- Footer top section -->
+    <section class="footer-top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-widget about-widget">
+                        <img src="../Models/hosting2019/img/logo.png" alt="">
+                        <p>@ViewBag.Project est une association de loi 1901 qui héberge des services web et aide les projets. Nous disposons de notre proprez infrastructure technique, AS, adresses ip et opérateur telecom. Association basée à Beauvais - France.</p>
+                        <div class="social-links">
+                            <a href=""><i class="fa fa-pinterest"></i></a>
+                            <a href="~/redirect.aspx?fb=social"><i class="fa fa-facebook"></i></a>
+                            <a href="~/redirect.aspx?tw=social"><i class="fa fa-twitter"></i></a>>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h5 class="fw-title">Produits</h5>
+                        <ul>
+                            <li><a href="~/card.aspx?web=product">Hébergement Web</a></li>
+                            <li><a href="~/card.aspx?vps=product">Serveurs VPS</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h5 class="fw-title">Accompagnement projets</h5>
+                        <ul>
+                            <li><a href="#">Faire une demande</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h5 class="fw-title">@ViewBag.Project</h5>
+                    <ul>
+                        <font color="white">
+                            <li>N° RNA : W601008273</li>
+                            <li>N° SIRET : -</li>
+                            <li>Adresse : 12 IMPASSE PAUL DELANSAY</li>
+                        </font>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/About">Qui sommes nous ?</a></li>
+                    <li><a href="/Services">Nos services</a></li>
+                    <li><a href="/">News</a></li>
+                    <li><a href="/Contactus">Contact</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>
+
+                    Copyright &copy; @ViewBag.Project  @DateTime.Now.Year All rights reserved
+                </p>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Models/hosting2019/js/jquery-3.2.1.min.js"></script>
+    <script src="../Models/hosting2019/js/bootstrap.min.js"></script>
+    <script src="../Models/hosting2019/js/owl.carousel.min.js"></script>
+    <script src="../Models/hosting2019/js/jquery.magnific-popup.min.js"></script>
+    <script src="../Models/hosting2019/js/circle-progress.min.js"></script>
+    <script src="../Models/hosting2019/js/main.js"></script>
+
+</body>
+</html>

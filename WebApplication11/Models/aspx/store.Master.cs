@@ -48,10 +48,19 @@ namespace WebApplication11
                 project_details.Visible = true;
             }
             else
+
+            if (Request.QueryString["mail"] != null)
             {
-
+                Label20.Visible = false;
+                Label21.Text = "Hébergement E-mail";
+                Button2.Visible = false;
+                Label1.Visible = true;
+                Label2.Visible = true;
+                Label3.Visible = true;
+                TextBox1.Visible = true;
+                TextBox2.Visible = true;
+                project_details.Visible = true;
             }
-
 
         }
 
@@ -103,46 +112,6 @@ namespace WebApplication11
 
         }
 
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-            // Variables pour l'envoi du mail
-            string prenom = TextBox1.Text;
-            string email = TextBox2.Text;
-            string project = project_details.Text;
-            string bodyemail = "C:\\Users\\bastien.LANGUEDOC\\source\\repos\\Synhostinger_Website\\WebApplication11\\Views\\Home\\Processvps.cshtml";
-            {
-                // Paramétre SMTP pour l'envoi du mail
-                WebMail.SmtpServer = "51.210.120.112";
-                WebMail.SmtpPort = 25;
-                WebMail.UserName = "no-reply@synhostinger.com";
-                WebMail.Password = "MBJkt31Jao";
-                WebMail.From = "no-reply@synhostinger.com";
-                WebMail.EnableSsl = false;
-                WebMail.Send(to: "contact@synhostinger.com",
-                // Envoi du mail avec les variables
-                subject: "Demande de projet -" + prenom,
-                body: bodyemail
-               );
-
-                // Paramétre SMTP pour l'envoi du mail
-                WebMail.SmtpServer = "51.210.120.112";
-                WebMail.SmtpPort = 25;
-                WebMail.UserName = "no-reply@synhostinger.com";
-                WebMail.Password = "MBJkt31Jao";
-                WebMail.From = "no-reply@synhostinger.com";
-                WebMail.EnableSsl = false;
-                WebMail.Send(to: "contact@synhostinger.com",
-                // Envoi du mail avec les variables
-                isBodyHtml: true,
-                subject: "Vérification de votre projet  - Synhostinger",
-                body: bodyemail
-               );
-
-                Label20.Visible = true;
-                Response.Redirect("/Successful");
-            }
-
-        }
         protected void TextBox3_TextChanged1(object sender, EventArgs e)
         {
 
@@ -166,11 +135,11 @@ namespace WebApplication11
             WebMail.Send(to: "contact@synhostinger.com",
             // Envoi du mail avec les variables
             subject: "Demande de projet -" + prenom,
-            body: "Hello " + "<br />" + "un nouveau projet est en attente :" + "<br />" + "Type : " + product + "<br /> <br />" + "Prénom :" + prenom + "<br />" + "Email :" + email +  "<br />" + " Description :" + project  + "<br /> <br />" + "Cordialement" + "<br />" + "l'équipe de Synhostinger"
+            body: "Hello " + "<br />" + "un nouveau projet est en attente :" + "<br />" + "Type : " + product + "<br /> <br />" + "Prénom : " + prenom + "<br />" + "Email : " + email +  "<br />" + "<br />" + " Description : " + project  + "<br /> <br />" + "Cordialement" + "<br />" + "l'équipe de Synhostinger"
            );
 
-            Page.RegisterStartupScript("myAlert", "<script language=JavaScript>window.alert('Ok');</script>");
-
+            Page.RegisterStartupScript("myAlert", "<script language=JavaScript>window.alert('Votre demande sera prise en compte dans les plus bref délai');</script>");
+            Response.Redirect("/");
         }
     }
 }

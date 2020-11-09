@@ -304,7 +304,6 @@
     <Content Include="Models\aspx\Maintenance.Master" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -332,6 +331,7 @@
     <Content Include="Models\aspx\store.Master" />
     <Content Include="Views\Home\requestvps.cshtml" />
     <Content Include="Views\Home\Processvps.cshtml" />
+    <Content Include="Views\Shared\template.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
