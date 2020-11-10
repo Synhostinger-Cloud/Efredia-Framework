@@ -130,12 +130,25 @@ namespace WebApplication11
             WebMail.SmtpPort = 25;
             WebMail.UserName = "no-reply@synhostinger.com";
             WebMail.Password = "MBJkt31Jao";
-            WebMail.From = "no-reply@synhostinger.com";
+            WebMail.From = "Ne Pas Répondre - <no-reply@synhostinger.com>";
             WebMail.EnableSsl = false;
             WebMail.Send(to: "contact@synhostinger.com",
             // Envoi du mail avec les variables
-            subject: "Demande de projet -" + prenom,
+            subject: "Demande de projet - " + prenom,
             body: "Hello " + "<br />" + "un nouveau projet est en attente :" + "<br />" + "Type : " + product + "<br /> <br />" + "Prénom : " + prenom + "<br />" + "Email : " + email +  "<br />" + "<br />" + " Description : " + project  + "<br /> <br />" + "Cordialement" + "<br />" + "l'équipe de Synhostinger"
+           );
+
+            // Paramétre SMTP pour l'envoi du mail
+            WebMail.SmtpServer = "51.210.120.112";
+            WebMail.SmtpPort = 25;
+            WebMail.UserName = "no-reply@synhostinger.com";
+            WebMail.Password = "MBJkt31Jao";
+            WebMail.From = "Ne Pas Répondre - <no-reply@synhostinger.com>";
+            WebMail.EnableSsl = false;
+            WebMail.Send(to: email,
+            // Envoi du mail avec les variables
+            subject: "Confirmation de votre demande de projet",
+            body: "Bonjour " + prenom + "<br /><br />" + "Notre équipe à bien reçu votre demande de projet" + "<br />" + "Voici le produit que vous avez sélectionné : " + product + "<br />" + "Nous vous remercions de la confiance que vous nous accordez. Une réponse vous sera apportée dans les prochains jours." + "<br /> <br />" + "Cordialement" + "<br />" + "l'équipe de Synhostinger"
            );
 
             Page.RegisterStartupScript("myAlert", "<script language=JavaScript>window.alert('Votre demande sera prise en compte dans les plus bref délai');</script>");
