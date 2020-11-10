@@ -117,6 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cart\product-project.aspx" />
+    <Content Include="contact.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="maintenance.aspx" />
@@ -218,6 +219,13 @@
     <Compile Include="cart\product-project.aspx.designer.cs">
       <DependentUpon>product-project.aspx</DependentUpon>
     </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\HomeController.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
@@ -233,6 +241,13 @@
     </Compile>
     <Compile Include="maintenance.aspx.designer.cs">
       <DependentUpon>maintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspx\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\aspx\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\aspx\Maintenance.Master.cs">
       <DependentUpon>Maintenance.Master</DependentUpon>
@@ -302,6 +317,7 @@
     <Content Include="Models\web2020\assets\fonts\FontAwesome.otf" />
     <Content Include="Models\aspx\redirect_302.Master" />
     <Content Include="Models\aspx\Maintenance.Master" />
+    <Content Include="Models\aspx\Default.Master" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml">
@@ -312,9 +328,6 @@
     </Content>
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <Content Include="Views\Home\Contact.cshtml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Home\ProcessRequest.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\Home\Project.cshtml">
@@ -329,8 +342,6 @@
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Models\aspx\store.Master" />
-    <Content Include="Views\Home\requestvps.cshtml" />
-    <Content Include="Views\Home\Processvps.cshtml" />
     <Content Include="Views\Shared\template.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

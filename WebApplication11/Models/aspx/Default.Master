@@ -1,42 +1,26 @@
-﻿@{
-    ViewBag.Project = "Synhostinger";
-}
-
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="WebApplication11.Models.aspx.Default" %>
 <!DOCTYPE html>
-<!--
-##########################################################
-#     ___         __                                     #
-#    /   |  _____/ /_  ______                            #
-#   / /| | / ___/ / / / / __ \                           #
-#  / ___ |(__  ) / /_/ / / / /                           #
-# /_/  |_/____/_/\__,_/_/ /_/                            #
-#                                                        #
-# Développeur multi-platerformes                         #
-# Twitter : https://twitter.com/aslun_fr                 #
-##########################################################
-    -->
-
-
 <html lang="fr">
 <head>
-    <title>@ViewBag.Project - @ViewBag.Title</title>
-    <meta name="description" content="L'association Synhostinger est une association de loi 1901 vous proposant de propulser vos projets à des tarifs attractif." />
+
+    <title>Synhostinger - Startup Program</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="UTF-8">
     <meta name="keywords" content="cloud, hosting, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link href="../Models/hosting2019/img/synhicon_color.ico" rel="shortcut icon" />
+    <link href="/Models/hosting2019/img/favicon.ico" rel="shortcut icon" />
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../Models/hosting2019/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../Models/hosting2019/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../Models/hosting2019/css/magnific-popup.css" />
-    <link rel="stylesheet" href="../Models/hosting2019/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../Models/hosting2019/css/style.css" />
-    <link rel="stylesheet" href="../Models/hosting2019/css/animate.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/style.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/animate.css" />
 
 
     <!--[if lt IE 9]>
@@ -71,32 +55,26 @@
 
             </div>
     </header>
-    <!-- Header section end -->
-    <!--Body-->
-    <!-- Page Top section -->
-    <section class="page-top-section set-bg" data-setbg="../Models/hosting2019/img/page-top-bg/1.jpg">
-        <div class="container">
-            <h2>@ViewBag.Title</h2>
+<asp:contentplaceholder id="web" runat="server">
+   
+  
+    
 
-        </div>
 
-    </section>
-    <!-- Page Top section end -->
 
-    <div id="body">
-        @RenderSection("featured", required: false)
-        @RenderBody()
+</asp:contentplaceholder>
 
-    </div>
+</body>
 
-    <!-- Footer top section -->
+        
+<!-- Footer top section -->
     <section class="footer-top-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <div class="footer-widget about-widget">
                         <img src="../Models/hosting2019/img/logo.png" alt="">
-                        <p>@ViewBag.Project est une association de loi 1901 qui héberge des services web et aide les projets. Nous disposons de notre proprez infrastructure technique, AS, adresses ip et opérateur telecom. Association basée à Beauvais - France.</p>
+                        <p>Synhostinger est une association de loi 1901 qui héberge des services web et aide les projets. Nous disposons de notre proprez infrastructure technique, AS, adresses ip et opérateur telecom. Association basée à Beauvais - France.</p>
                         <div class="social-links">
                             <a href=""><i class="fa fa-pinterest"></i></a>
                             <a href="~/redirect.aspx?fb=social"><i class="fa fa-facebook"></i></a>
@@ -124,7 +102,7 @@
                 </div>
 
                 <div class="footer-widget">
-                    <h5 class="fw-title">@ViewBag.Project</h5>
+                    <h5 class="fw-title">Synhostinger</h5>
                     <ul>
                         <font color="white">
                             <li>N° RNA : W601008273</li>
@@ -153,7 +131,7 @@
             <div class="copyright">
                 <p>
 
-                    Copyright &copy; @ViewBag.Project  @DateTime.Now.Year All rights reserved
+                    Copyright &copy; Synhostinger  @DateTime.Now.Year All rights reserved
                 </p>
                 </p>
             </div>
