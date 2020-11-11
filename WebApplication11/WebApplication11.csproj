@@ -205,6 +205,7 @@
     <Content Include="Models\web2020\images\pic05.jpg" />
     <Content Include="Models\web2020\images\pic06.jpg" />
     <Content Include="Models\web2020\index.html" />
+    <Content Include="redirect-social-network\index.aspx" />
     <Content Include="synhicon_color.ico" />
     <Content Include="TextTemplate.ico" />
     <Content Include="Web.config" />
@@ -304,6 +305,13 @@
     <Compile Include="Models\aspx\store.Master.designer.cs">
       <DependentUpon>store.Master</DependentUpon>
     </Compile>
+    <Compile Include="redirect-social-network\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redirect-social-network\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -326,7 +334,6 @@
     <Content Include="Views\Home\About.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <Content Include="Views\Home\Contact.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -337,12 +344,10 @@
     <Content Include="Views\Services\Finish.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Properties\PublishProfiles\Dédié.pubxml" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
-    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Models\aspx\store.Master" />
     <Content Include="Views\Shared\template.cshtml" />
+    <None Include="Properties\PublishProfiles\IIS-SRV1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

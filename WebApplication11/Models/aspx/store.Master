@@ -123,9 +123,8 @@
                         <img src="../Models/hosting2019/img/logo.png" alt="">
                         <p>Synhostinger est une association de loi 1901 qui héberge des services web et aide les projets. Nous disposons de notre proprez infrastructure technique, AS, adresses ip et opérateur telecom. Association basée à Beauvais - France.</p>
                         <div class="social-links">
-                            <a href=""><i class="fa fa-pinterest"></i></a>
-                            <a href="~/redirect.aspx?fb=social"><i class="fa fa-facebook"></i></a>
-                            <a href="~/redirect.aspx?tw=social"><i class="fa fa-twitter"></i></a>>
+                            <a href="https://redirect.synhostinger.com/url=https://www.facebook.com/synhostinger/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://redirect.synhostinger.com/url=https://twitter.com/synhostinger_fr"><i class="fa fa-twitter"></i></a>>
                         </div>
                     </div>
                 </div>
@@ -133,8 +132,9 @@
                     <div class="footer-widget">
                         <h5 class="fw-title">Produits</h5>
                         <ul>
-                            <li><a href="/card.aspx?web=product">Hébergement Web</a></li>
-                            <li><a href="/card.aspx?vps=product">Serveurs VPS</a></li>
+                            <li><a href="/cart/product-project.aspx?web=product">Hébergement Web</a></li>
+                            <li><a href="/cart/product-project.aspx?mail=product">Hébergement E-mail</a></li>
+                            <li><a href="/cart/product-project.aspx?vps=product">Serveurs VPS</a></li>
 
                         </ul>
                     </div>
