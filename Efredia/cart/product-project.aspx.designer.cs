@@ -7,7 +7,7 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace WebApplication11.cart
+namespace Efredia.cart
 {
 
 

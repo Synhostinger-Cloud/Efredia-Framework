@@ -20,7 +20,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Renci.SshNet;
 
-namespace WebApplication11.cart
+namespace Efredia.cart
 {
     public partial class cart : System.Web.UI.Page
     {

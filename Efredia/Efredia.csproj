@@ -35,7 +35,7 @@
     <PublishDatabaseSettings>
       <Objects>
         <ObjectGroup Name="Sql" Order="1" Enabled="False">
-          <Destination Path="Data Source=%28LocalDB%29\MSSQLLocalDB%3bAttachDbFilename=C:\Users\bastien\source\repos\WebApplication11\WebApplication11\App_Data\register.mdf%3bIntegrated Security=True%3bConnect Timeout=30" />
+          <Destination Path="Data Source=%28LocalDB%29\MSSQLLocalDB%3bAttachDbFilename=C:\Users\bastien\source\repos\Efredia\Efredia\App_Data\register.mdf%3bIntegrated Security=True%3bConnect Timeout=30" />
         </ObjectGroup>
       </Objects>
     </PublishDatabaseSettings>

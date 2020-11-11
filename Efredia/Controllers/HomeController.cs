@@ -17,7 +17,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Resources;
 
-namespace WebApplication11.Controllers
+namespace Efredia.Controllers
 {
 
 
