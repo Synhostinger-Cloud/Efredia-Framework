@@ -7,7 +7,7 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace WebApplication11.Models.aspx
+namespace Efredia.Models.aspx
 {
 
 

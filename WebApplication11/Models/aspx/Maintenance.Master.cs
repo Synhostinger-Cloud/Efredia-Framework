@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication11.Models.aspx
+namespace Efredia.Models.aspx
 {
     public partial class Maintenance : System.Web.UI.MasterPage
     {

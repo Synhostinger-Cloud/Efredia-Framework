@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Synhostinger - Contact" Language="C#" MasterPageFile="~/Models/aspx/Default.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="WebApplication11.contact" %>
+﻿<%@ Page Title="Synhostinger - Contact" Language="C#" MasterPageFile="~/Models/aspx/Default.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="Efredia.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="web" runat="server">
 
      <!-- Header section end -->

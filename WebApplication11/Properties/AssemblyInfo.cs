@@ -6,13 +6,13 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("Synhostinger Web")]
+[assembly: AssemblyTitle("Efredia-Framework")]
 [assembly: AssemblyDescription("Site Web de L'association Synhostinger")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Association Synhostinger")]
-[assembly: AssemblyProduct("Synhostinger_Web")]
+[assembly: AssemblyProduct("Efredia-Framework")]
 [assembly: AssemblyCopyright("Copyright Synhostinger ©  2020")]
-[assembly: AssemblyTrademark("Languedoc Network")]
+[assembly: AssemblyTrademark("Efredia")]
 [assembly: AssemblyCulture("")]
 
 // L'affectation de la valeur false à ComVisible rend les types invisibles dans cet assembly 

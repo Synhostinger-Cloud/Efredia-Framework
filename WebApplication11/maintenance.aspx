@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Synhostinger Maintenance" Language="C#" MasterPageFile="~/Models/aspx/Maintenance.Master" AutoEventWireup="true" CodeBehind="maintenance.aspx.cs" Inherits="WebApplication11.maintenance" %>
+﻿<%@ Page Title="Synhostinger Maintenance" Language="C#" MasterPageFile="~/Models/aspx/Maintenance.Master" AutoEventWireup="true" CodeBehind="Efredia.aspx.cs" Inherits="WebApplication11.maintenance" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="article"
   Runat="Server">

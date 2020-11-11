@@ -8,7 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Renci.SshNet;
 
-namespace WebApplication11
+namespace Efredia
 {
     public partial class Site1 : System.Web.UI.MasterPage
     {

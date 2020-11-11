@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="store.Master.cs" Inherits="WebApplication11.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="store.Master.cs" Inherits="Efredia.Site1" %>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

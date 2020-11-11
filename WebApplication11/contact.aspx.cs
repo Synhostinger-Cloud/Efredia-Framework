@@ -8,7 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Renci.SshNet;
 
-namespace WebApplication11
+namespace Efredia
 {
     public partial class contact : System.Web.UI.Page
     {

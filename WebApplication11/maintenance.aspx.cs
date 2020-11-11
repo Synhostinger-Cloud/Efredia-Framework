@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication11
+namespace Efredia
 {
     public partial class maintenance : System.Web.UI.Page
     {

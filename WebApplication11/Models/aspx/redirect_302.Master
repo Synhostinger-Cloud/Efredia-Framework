@@ -10,7 +10,7 @@
 # Twitter : https://twitter.com/aslun_fr                 #
 ##########################################################
     -->
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="redirect_302.Master.cs" Inherits="WebApplication11.Site1" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="redirect_302.Master.cs" Inherits="Efredia.Site1" %>
 <script runat="server">
 private void Page_Load(object sender, System.EventArgs e)
 {
