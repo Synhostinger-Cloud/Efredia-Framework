@@ -61,7 +61,7 @@ namespace Efredia.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Synhostinger.
+        ///   Recherche une chaîne localisée semblable à Efredia.
         /// </summary>
         internal static string Name {
             get {

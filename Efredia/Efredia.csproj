@@ -211,7 +211,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="cart\product-project.aspx.cs">
       <DependentUpon>product-project.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -227,9 +226,6 @@
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="Controllers\ServicesController.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -332,10 +328,6 @@
     <Content Include="Views\Home\Project.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\Services\Index.cshtml" />
-    <Content Include="Views\Services\Finish.cshtml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Models\aspx\store.Master" />
     <Content Include="Views\Shared\template.cshtml" />
@@ -349,8 +341,6 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Browsers\" />
-    <Folder Include="App_Data\" />
     <Folder Include="App_Themes\" />
   </ItemGroup>
   <ItemGroup>
