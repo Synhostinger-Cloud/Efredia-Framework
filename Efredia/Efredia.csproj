@@ -298,10 +298,6 @@
     <Compile Include="Models\aspx\store.Master.designer.cs">
       <DependentUpon>store.Master</DependentUpon>
     </Compile>
-    <Compile Include="SqlDatabaseSetup.cs" />
-    <Compile Include="SqlServerUnitTest1.cs">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
