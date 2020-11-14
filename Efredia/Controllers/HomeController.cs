@@ -33,7 +33,7 @@ namespace Efredia.Controllers
             ViewBag.indepedanttitle = "Indépendant";
             ViewBag.indepedant = "Synhostinger héberge tous ses services sur son réseau (AS212816)";
             ViewBag.dellhptitle = "Serveur HP / Dell";
-            ViewBag.dellhp = "Synhostinger utilises du matériel de grand constructeur pour noous permettre de garantir la qualité de notre infrastructure.";
+            ViewBag.dellhp = "Synhostinger utilises du matériel de grand constructeur pour nous permettre de garantir la qualité de notre infrastructure.";
             ViewBag.Replicationtitle = "Réplication";
             ViewBag.Replication = "Nos sauvergardes se font uniquement sur des serveurs Français pour un respect total de vos données";
             return View();
