@@ -117,7 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cart\product-project.aspx" />
-    <Content Include="contact.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="maintenance.aspx" />
@@ -217,13 +216,6 @@
     </Compile>
     <Compile Include="cart\product-project.aspx.designer.cs">
       <DependentUpon>product-project.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="contact.aspx.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="contact.aspx.designer.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
