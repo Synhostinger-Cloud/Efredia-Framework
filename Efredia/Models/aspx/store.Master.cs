@@ -126,12 +126,12 @@ namespace Efredia
             string project = project_details.Text;
             string product = Label21.Text;
             // Paramétre SMTP pour l'envoi du mail
-            WebMail.SmtpServer = "51.210.120.112";
-            WebMail.SmtpPort = 25;
-            WebMail.UserName = "no-reply@synhostinger.com";
+            WebMail.SmtpServer = "ssl0.ovh.net";
+            WebMail.SmtpPort = 587;
+            WebMail.UserName = "no-reply@synhostinger.fr";
             WebMail.Password = "MBJkt31Jao";
-            WebMail.From = "Ne Pas Répondre - <no-reply@synhostinger.com>";
-            WebMail.EnableSsl = false;
+            WebMail.From = "Ne Pas Répondre - <no-reply@synhostinger.fr>";
+            WebMail.EnableSsl = true;
             WebMail.Send(to: "contact@synhostinger.com",
             // Envoi du mail avec les variables
             subject: "Demande de projet - " + prenom,
@@ -139,12 +139,12 @@ namespace Efredia
            );
 
             // Paramétre SMTP pour l'envoi du mail
-            WebMail.SmtpServer = "51.210.120.112";
-            WebMail.SmtpPort = 25;
-            WebMail.UserName = "no-reply@synhostinger.com";
+            WebMail.SmtpServer = "ssl0.ovh.net";
+            WebMail.SmtpPort = 587;
+            WebMail.UserName = "no-reply@synhostinger.fr";
             WebMail.Password = "MBJkt31Jao";
-            WebMail.From = "Ne Pas Répondre - <no-reply@synhostinger.com>";
-            WebMail.EnableSsl = false;
+            WebMail.From = "Ne Pas Répondre - <no-reply@synhostinger.fr>";
+            WebMail.EnableSsl = true;
             WebMail.Send(to: email,
             // Envoi du mail avec les variables
             subject: "Confirmation de votre demande de projet",
