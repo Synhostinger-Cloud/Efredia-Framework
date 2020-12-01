@@ -49,7 +49,8 @@
                 <ul class="main-menu">
                     <li><a href="/">Accueil</a></li>
                     <li><a href="/About">Info</a></li>
-                    <li><a href="/Project">Startup Program</a></li>
+                    <li><a href="/vps">Offres VPS</a></li>
+                    <li><a href="/web">Offres Web</a></li>
                      <!-- <li><a href=""></a></li>-->
                 </ul>
 
@@ -129,7 +130,7 @@
             <div class="copyright">
                 <p>
 
-                    Copyright &copy; Synhostinger  @DateTime.Now.Year All rights reserved
+                    Copyright &copy; Synhostinger  @DateTime.Now.Year All rights reserved - Efredia V2.0
                 </p>
                 </p>
             </div>

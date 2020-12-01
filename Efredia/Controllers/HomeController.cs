@@ -67,12 +67,29 @@ namespace Efredia.Controllers
             return View();
         }
 
-        [Route("Project")]
+        [Route("vps")]
         // GET: Default
-        public ActionResult Project()
+        public ActionResult vps()
         {
-            ViewBag.Title = "Project";
-            ViewBag.Project = "Synhostinger";
+            ViewBag.Title = "Performance et prix bas";
+            ViewBag.VPSButton = "Précommander";
+            ViewBag.Project = "VPS Linux";
+            ViewBag.indepedanttitle = "Indépendant";
+            ViewBag.indepedant = "Synhostinger héberge tous ses services sur son réseau (AS212816)";
+            ViewBag.dellhptitle = "Serveur HP / Dell";
+            ViewBag.dellhp = "Synhostinger utilises du matériel de grand constructeur pour noous permettre de garantir la qualité de notre infrastructure.";
+            ViewBag.Replicationtitle = "Réplication";
+            ViewBag.Replication = "Nos sauvergardes se font uniquement sur des serveurs Français pour un respect total de vos données";
+            return View();
+        }
+
+        [Route("web")]
+        // GET: Default
+        public ActionResult webhosting()
+        {
+            ViewBag.Title = "Le meilleur de l'hébergement";
+            ViewBag.VPSButton = "Précommander";
+            ViewBag.Project = "Hébergement Web";
             ViewBag.indepedanttitle = "Indépendant";
             ViewBag.indepedant = "Synhostinger héberge tous ses services sur son réseau (AS212816)";
             ViewBag.dellhptitle = "Serveur HP / Dell";

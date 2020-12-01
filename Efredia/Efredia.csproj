@@ -122,7 +122,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cart\product-project.aspx" />
+    <Content Include="cart\index.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="maintenance.aspx" />
@@ -216,12 +216,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="cart\product-project.aspx.cs">
-      <DependentUpon>product-project.aspx</DependentUpon>
+    <Compile Include="cart\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="cart\product-project.aspx.designer.cs">
-      <DependentUpon>product-project.aspx</DependentUpon>
+    <Compile Include="cart\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -324,13 +324,14 @@
     <Content Include="Views\Home\Contact.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\Home\Project.cshtml">
+    <Content Include="Views\Home\vps.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Models\aspx\store.Master" />
     <Content Include="Views\Shared\template.cshtml" />
     <None Include="Properties\PublishProfiles\IIS-SRV1.pubxml" />
+    <Content Include="Views\Home\webhosting.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

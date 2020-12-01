@@ -1,13 +1,51 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="store.Master.cs" Inherits="Efredia.Site1" %>
 <!DOCTYPE html>
+
+<!----
+ __             _               _   _
+/ _\_   _ _ __ | |__   ___  ___| |_(_)_ __   __ _  ___ _ __
+\ \| | | | '_ \| '_ \ / _ \/ __| __| | '_ \ / _` |/ _ \ '__|
+_\ \ |_| | | | | | | | (_) \__ \ |_| | | | | (_| |  __/ |
+\__/\__, |_| |_|_| |_|\___/|___/\__|_|_| |_|\__, |\___|_|
+    |___/                                   |___/
+             Site dev by Bastien Languedoc
+                Twitter : aslun_fr
+              INTERDIT DE REPRODUIRE LE SITE
+  ------>
+
 <html lang="fr">
 <head>
-    <title>Synhostinger - Startup Program</title>
     <meta charset="UTF-8">
-    <meta name="keywords" content="cloud, hosting, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pré-commande - Synhostinger</title>
+
+    <meta name="description" content="Hébergeur de sites internet, d'infrastructures Virtuelles (VPS) avec une aide au projet personnalisé. Avec une infrastructures dans la Ville de Beauvais." />
+    <meta name="keywords" content="VPS, Beauvais, hébergeur made in french, location de serveur virtuel, vps, vps pro, technologie Intel - Xeon, disque SAS">
+    <meta name="Publisher" content="Synhostinger [contact@synhostinger.fr]" />
+    <meta name="Geography" content="France">
+    <meta name="country" content="France">
+    <meta name="Language" content="French">
+    <meta name="Copyright" content="Association Synhostinger">
+    <meta name="robots" content="index, follow">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Hébergeur de sites internet, d'infrastructures Virtuelles (VPS) avec une aide au projet personnalisé. Avec une infrastructures dans la Ville de Beauvais." />
+    <meta name="twitter:title" content="@ViewBag.Project - @ViewBag.Title" />
+    <meta name="twitter:site" content="@ViewBag.Twitter" />
+    <meta name="twitter:creator" content="@ViewBag.Twitter" />
+
+    <!---- Meta property ------>
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@ViewBag.Project - @ViewBag.Title" />
+    <meta property="og:description" content="Hébergeur de sites internet, d'infrastructures Virtuelles (VPS) avec une aide au projet personnalisé. Avec une infrastructures dans la Ville de Beauvais." />
+    <meta property="og:url" content="https://www.synhostinger.com" />
+    <meta property="og:site_name" content="www.synhostinger.com" />
+
     <!-- Favicon -->
-    <link href="/Models/hosting2019/img/favicon.ico" rel="shortcut icon" />
+    <link href="../Models/hosting2019/img/synhicon_color.ico" rel="shortcut icon" />
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -47,7 +85,8 @@
                 <ul class="main-menu">
                     <li><a href="/">Accueil</a></li>
                     <li><a href="/About">Info</a></li>
-                    <li><a href="/Project">Startup Program</a></li>
+                    <li><a href="/Vps">Offre VPS</a></li>
+                    <li><a href="/Web">Offre Web</a></li>
                        <!-- <li><a href=""></a></li>-->
                 </ul>
 
@@ -84,23 +123,28 @@
       <center>    <asp:Button ID="Button2" runat="server" Text="Retour" OnClick="Button2_Click" /></center> 
             <center>
             &nbsp;<br />
-                <asp:Label ID="Label1" runat="server" Text="Nom Prénom" Visible="False"></asp:Label>
+                <asp:Label ID="labelname" runat="server" Text="Nom Prénom" Visible="False"></asp:Label>
                 <br />
-                <asp:TextBox ID="TextBox1" runat="server" required="required" OnTextChanged="TextBox1_TextChanged1" Visible="False"></asp:TextBox>
+                <asp:TextBox ID="named" runat="server" required="required" OnTextChanged="named_textchanged" Visible="False"></asp:TextBox>
                 <br />
-                <asp:Label ID="Label2" runat="server" Text="E-mail" Visible="False"></asp:Label>
+                <asp:Label ID="labelemail" runat="server" Text="E-mail" Visible="False"></asp:Label>
                 <br />
-                <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged1" TextMode="Email" required="required" Visible="False"></asp:TextBox>
+                <asp:TextBox ID="emailtextbox" runat="server" OnTextChanged="email_TextChanged" TextMode="Email" required="required" Visible="False"></asp:TextBox>
+                 <br />
+                <asp:Label ID="Tel" runat="server" Text="Numéro de téléphone" Visible="true"></asp:Label>
+                <br />
+                <asp:TextBox ID="TelBox" runat="server" OnTextChanged="TelBox_TextChanged" TextMode="number" required="required" Visible="False"></asp:TextBox>
+
             <br />
-&nbsp;<asp:Label ID="Label3" runat="server" Text="Détail de votre projet" Visible="False"></asp:Label>
+&nbsp;<asp:Label ID="Label3" runat="server" Text="Utilité de votre produit" Visible="False"></asp:Label>
             <br />
-                <asp:TextBox ID="project_details" runat="server" TextMode="MultiLine" required="required" OnTextChanged="TextBox3_TextChanged1" Height="139px" Visible="False" Width="441px"></asp:TextBox>
+                <asp:TextBox ID="project_details" runat="server" TextMode="MultiLine" required="required" OnTextChanged="details_textchanged" Height="139px" Visible="False" Width="441px"></asp:TextBox>
                 <br />
                 Produit :
                 <asp:Label ID="Label21" runat="server" Text="Label"></asp:Label>
                 <br />
                 <br />
-                <asp:Button ID="Button4" runat="server" OnClick="Button4_Click1" Text="Validation" />
+                <asp:Button ID="Validation" runat="server" OnClick="validation_click" Text="Validation" />
             <br />
 &nbsp;<br />
                 <br />
@@ -176,7 +220,7 @@
             <div class="copyright">
                 <p>
 
-                    Copyright &copy; Synhostinger  @DateTime.Now.Year All rights reserved
+                    Copyright &copy; Synhostinger  @DateTime.Now.Year All rights reserved - Efredia V2.0
                 </p>
                 </p>
             </div>

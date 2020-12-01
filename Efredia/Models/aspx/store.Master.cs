@@ -17,16 +17,16 @@ namespace Efredia
         {
 
             //Activation des label et textbox et changement de label vide en HDD = ?hdd=disque
-            if (Request.QueryString["vps"] != null)
+            if (Request.QueryString["vps-perso"] != null)
             {
                 Label20.Visible = false;
-                Label21.Text = "Hébergement VPS";
+                Label21.Text = "VPS Personal";
                 Button2.Visible = false;
-                Label1.Visible = true;
-                Label2.Visible = true;
+                labelname.Visible = true;
+                labelemail.Visible = true;
                 Label3.Visible = true;
-                TextBox1.Visible = true;
-                TextBox2.Visible = true;
+                named.Visible = true;
+                emailtextbox.Visible = true;
                 project_details.Visible = true;
             }
             else
@@ -34,17 +34,49 @@ namespace Efredia
 
             }
 
+            if (Request.QueryString["vps-start"] != null)
+            {
+                Label20.Visible = false;
+                Label21.Text = "VPS Startup";
+                Button2.Visible = false;
+                labelname.Visible = true;
+                labelemail.Visible = true;
+                Label3.Visible = true;
+                named.Visible = true;
+                emailtextbox.Visible = true;
+                project_details.Visible = true;
+            }
+            else
+            {
+
+            }
+            if (Request.QueryString["vps-entreprise"] != null)
+            {
+                Label20.Visible = false;
+                Label21.Text = "VPS Enterprise";
+                Button2.Visible = false;
+                labelname.Visible = true;
+                labelemail.Visible = true;
+                Label3.Visible = true;
+                named.Visible = true;
+                emailtextbox.Visible = true;
+                project_details.Visible = true;
+            }
+            else
+            {
+
+            }
 
             if (Request.QueryString["web"] != null)
             {
                 Label20.Visible = false;
                 Label21.Text = "Hébergement Web";
                 Button2.Visible = false;
-                Label1.Visible = true;
-                Label2.Visible = true;
+                labelname.Visible = true;
+                labelemail.Visible = true;
                 Label3.Visible = true;
-                TextBox1.Visible = true;
-                TextBox2.Visible = true;
+                named.Visible = true;
+                emailtextbox.Visible = true;
                 project_details.Visible = true;
             }
             else
@@ -54,17 +86,17 @@ namespace Efredia
                 Label20.Visible = false;
                 Label21.Text = "Hébergement E-mail";
                 Button2.Visible = false;
-                Label1.Visible = true;
-                Label2.Visible = true;
+                labelname.Visible = true;
+                labelemail.Visible = true;
                 Label3.Visible = true;
-                TextBox1.Visible = true;
-                TextBox2.Visible = true;
+                named.Visible = true;
+                emailtextbox.Visible = true;
                 project_details.Visible = true;
             }
 
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        protected void named_textchanged(object sender, EventArgs e)
         {
             //Prénom
         }
@@ -79,7 +111,7 @@ namespace Efredia
 
 
 
-        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        protected void email_TextChanged(object sender, EventArgs e)
         {
             //Email
         }
@@ -95,7 +127,7 @@ namespace Efredia
             //Type d'OS
         }
 
-        protected void TextBox2_TextChanged1(object sender, EventArgs e)
+        protected void details_textchanged(object sender, EventArgs e)
         {
 
         }
@@ -112,17 +144,17 @@ namespace Efredia
 
         }
 
-        protected void TextBox3_TextChanged1(object sender, EventArgs e)
+        protected void TelBox_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         [Obsolete]
-        protected void Button4_Click1(object sender, EventArgs e)
+        protected void validation_click(object sender, EventArgs e)
         {
             // Variables pour l'envoi du mail
-            string prenom = TextBox1.Text;
-            string email = TextBox2.Text;
+            string prenom = named.Text;
+            string email = emailtextbox.Text;
             string project = project_details.Text;
             string product = Label21.Text;
             // Paramétre SMTP pour l'envoi du mail
@@ -134,8 +166,8 @@ namespace Efredia
             WebMail.EnableSsl = true;
             WebMail.Send(to: "contact@synhostinger.com",
             // Envoi du mail avec les variables
-            subject: "Demande de projet - " + prenom,
-            body: "Hello " + "<br />" + "un nouveau projet est en attente :" + "<br />" + "Type : " + product + "<br /> <br />" + "Prénom : " + prenom + "<br />" + "Email : " + email +  "<br />" + "<br />" + " Description : " + project  + "<br /> <br />" + "Cordialement" + "<br />" + "l'équipe de Synhostinger"
+            subject: "Pré-commande de " + prenom,
+            body: "Hello " + "<br />" + "une nouveau pré-commande est en attente :" + "<br />" + "Type : " + product + "<br /> <br />" + "Prénom : " + prenom + "<br />" + "Email : " + email +  "<br />" + "<br />" + " Description : " + project  + "<br /> <br />" + "Cordialement" + "<br />" + "l'équipe de Synhostinger"
            );
 
             // Paramétre SMTP pour l'envoi du mail
@@ -147,8 +179,8 @@ namespace Efredia
             WebMail.EnableSsl = true;
             WebMail.Send(to: email,
             // Envoi du mail avec les variables
-            subject: "Confirmation de votre demande de projet",
-            body: "Bonjour " + prenom + "<br /><br />" + "Notre équipe à bien reçu votre demande de projet" + "<br />" + "Voici le produit que vous avez sélectionné : " + product + "<br />" + "Nous vous remercions de la confiance que vous nous accordez. Une réponse vous sera apportée dans les prochains jours." + "<br /> <br />" + "Cordialement" + "<br />" + "l'équipe de Synhostinger"
+            subject: "Confirmation de votre pré-commande",
+            body: "Bonjour " + prenom + "<br /><br />" + "Notre équipe à bien reçu votre demande de pré-commande" + "<br />" + "Voici le produit que vous avez sélectionné : " + product + "<br />" + "Nous vous remercions de la confiance que vous nous accordez. Une réponse vous sera apportée dans les prochains jours." + "<br /> <br />" + "Cordialement" + "<br />" + "l'équipe de Synhostinger"
            );
 
             Page.RegisterStartupScript("myAlert", "<script language=JavaScript>window.alert('Votre demande sera prise en compte dans les plus bref délai');</script>");
