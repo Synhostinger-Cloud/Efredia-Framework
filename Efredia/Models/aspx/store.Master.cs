@@ -23,6 +23,7 @@ namespace Efredia
                 Label21.Text = "VPS Personal";
                 Button2.Visible = false;
                 labelname.Visible = true;
+                TelBox.Visible = true;
                 labelemail.Visible = true;
                 Label3.Visible = true;
                 named.Visible = true;
@@ -39,6 +40,7 @@ namespace Efredia
                 Label20.Visible = false;
                 Label21.Text = "VPS Startup";
                 Button2.Visible = false;
+                TelBox.Visible = true;
                 labelname.Visible = true;
                 labelemail.Visible = true;
                 Label3.Visible = true;
@@ -56,6 +58,7 @@ namespace Efredia
                 Label21.Text = "VPS Enterprise";
                 Button2.Visible = false;
                 labelname.Visible = true;
+                TelBox.Visible = true;
                 labelemail.Visible = true;
                 Label3.Visible = true;
                 named.Visible = true;
@@ -73,6 +76,7 @@ namespace Efredia
                 Label21.Text = "Hébergement Web";
                 Button2.Visible = false;
                 labelname.Visible = true;
+                TelBox.Visible = true;
                 labelemail.Visible = true;
                 Label3.Visible = true;
                 named.Visible = true;
@@ -89,6 +93,7 @@ namespace Efredia
                 labelname.Visible = true;
                 labelemail.Visible = true;
                 Label3.Visible = true;
+                TelBox.Visible = true;
                 named.Visible = true;
                 emailtextbox.Visible = true;
                 project_details.Visible = true;
