@@ -85,7 +85,10 @@ namespace Efredia.Controllers
             ViewBag.dellhp = "Synhostinger utilises du matériel de grand constructeur pour noous permettre de garantir la qualité de notre infrastructure.";
             ViewBag.Replicationtitle = "Réplication";
             ViewBag.Replication = "Nos sauvergardes se font uniquement sur des serveurs Français pour un respect total de vos données";
+            ViewBag.Banner = "Un serveur adapté à vos projets !";
             return View();
+
+
         }
 
         [Route("web")]
@@ -94,6 +97,7 @@ namespace Efredia.Controllers
         {
             ViewBag.Title = "Le meilleur de l'hébergement";
             ViewBag.VPSButton = "Précommander";
+            ViewBag.Banner = "Un hébergement adapté à vos projets !";
             ViewBag.Project = "Synhostinger";
             ViewBag.indepedanttitle = "Indépendant";
             ViewBag.activatemenu = "active";

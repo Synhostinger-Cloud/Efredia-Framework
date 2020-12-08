@@ -1,134 +1,189 @@
-﻿<!-- Pricing section -->
-<section class="pricing-section spad">
+﻿<section id="service" class="service">
     <div class="container">
-        <div class="section-title text-white">
-            <h2>Nos services VPS</h2>
-
-        </div>
-        <form method="post" action="~/Send">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="pricing-card">
-                        <div class="pc-header">
-                            <h4>VPS Personal</h4>
-                            <h5><span>5.99€ /mois</span></h5>
+        <div class="row">
+            <div class="main_service text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single_service wow fadeIn" data-wow-duration=".6s">
+                        <div class="single_service_icon icon_one">
+                            <a href=""><i class="fa fa-server"></i></a>
                         </div>
-                        <div class="pc-details">
-                            <div class="pc-icon">
-                                <img src="../Models/hosting2019/img/pricing-icons/3.png" alt="#">
-                            </div>
-                            <ul>
-                                <li>4 vCore </li>
-                                <li>8 Go RAM</li>
-                                <li>10 Go SAS [15K RPM]</li>
-                                <li>Linux uniquement</li>
-                                <li>x1 IPv6 & IPv4</li>
-                                <li>Jusqu'à 100 Mbps</li>
-                            </ul>
-                            <a href="~/cart/index.aspx?vps-perso=product" class="site-btn">@ViewBag.VPSButton</a>
+                        <div class="single_service_deatels">
+                            <h4>Serveurs</h4>
+                            <p>l'ensemble de vos VPS sont hébergé en France dans l'oise. Deux points disponible Centre ou Nord de l'oise</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="pricing-card">
-                        <div class="pc-header">
-                            <h4>VPS Startup</h4>
-                            <h5><span>12.99€ /mois</span></h5>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single_service wow fadeIn" data-wow-duration="1.2s">
+                        <div class="single_service_icon icon_two">
+                            <a href=""><i class="fa fa-sellsy"></i></a>
                         </div>
-                        <div class="pc-details">
-                            <div class="pc-icon">
-                                <img src="../Models/hosting2019/img/pricing-icons/3.png" alt="">
-                            </div>
-                            <ul>
-                                <li>6 vCore </li>
-                                <li>16 Go RAM</li>
-                                <li>30 Go SAS [15K RPM]</li>
-                                <li>Linux uniquement</li>
-                                <li>x1 IPv6 & IPv4</li>
-                                <li>Jusqu'à 100 Mbps</li>
-                            </ul>
-                            <a href="~/cart/index.aspx?vps-start=product" class="site-btn">@ViewBag.VPSButton</a>
+                        <div class="single_service_deatels">
+                            <h4>Notre réseau</h4>
+                            <p>pour vos VPS nous avons donc des IPv6 que nous gérons nous même est des IPv4 sur le réseau OVHCloud</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="pricing-card">
-                        <div class="pc-header">
-                            <h4>VPS Enterprise</h4>
-                            <h5><span>25.99€ /mois</span></h5>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single_service wow fadeIn" data-wow-duration="1.7s">
+                        <div class="single_service_icon icon_three">
+                            <a href=""><i class="fa fa-hdd-o"></i></a>
                         </div>
-                        <div class="pc-details">
-                            <div class="pc-icon">
-                                <img src="../Models/hosting2019/img/pricing-icons/3.png" alt="#">
-                            </div>
-                            <ul>
-                                <li>8 vCore </li>
-                                <li>32 Go RAM</li>
-                                <li>50 Go SAS [15K RPM]</li>
-                                <li>Linux uniquement</li>
-                                <li>x1 IPv6 & IPv4</li>
-                                <li>100 Mbps dédié</li>
-                            </ul>
-                            <a href="~/cart/index.aspx?vps-entreprise=product" class="site-btn">@ViewBag.VPSButton</a>
+                        <div class="single_service_deatels">
+                            <h4>Disque SAS</h4>
+                            <p>Chaque donnée est répliquée sur plusieurs de nos disques, qui sont en raid 10 ou Raid 5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single_service wow fadeIn" data-wow-duration="2s">
+                        <div class="single_service_icon icon_four">
+                            <a href=""><i class="fa fa-comments"></i></a>
+                        </div>
+                        <div class="single_service_deatels">
+                            <h4>Support</h4>
+                            <p>Notre équipe de techniciens savent les enjeux d'un VPS. c'est pour cela qu'ils sont à votre disponibilité</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-        </form>
-</div>
-    
+        </div>
+    </div>
+</section><!-- End of service Section -->
+<section id="pricingtop" class="pricingtop">
+    <div class="overlay">
+        <div class="container">
+            <div class="main_pricingtop"></div>
+        </div>
     </div>
 </section>
-
-<div class="add-section spad">
+<section id="pricing" class="pricing">
     <div class="container">
-        <div class="section-title">
-            <h2>Pourquoi choisir les VPS Synhostinger ? </h2>
-        </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <a href="#"><img src="../Models/hosting2019/img/light.png" alt=""></a>
-                </div>
-                <div class="col-lg-6">
-                    <div id="accordion" class="accordion-area">
-                        <div class="panel">
-                            <div class="panel-header" id="headingOne">
-                                <button class="panel-link active collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Trafic illimité</button>
-                            </div>
-                            <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
-                                <div class="panel-body">
-                                    <p>Le trafic de votre serveur VPS est illimité, avec une bande passante maximale de 200 Mbps.</p>
+        <div class="row">
+            <div class="main_pricing">
+
+                <div class="pricing_content">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_pricing pricing_color_one wow fadeIn" data-wow-duration=".6s">
+                            <div class="pricing_head text-center">
+                                <div class="icon_area p_icon_one">
+                                    <i class="fa fa-star"></i>
                                 </div>
+                                <h3>VPS Personal</h3>
+                                <div class="separator"></div>
                             </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-header" id="headingTwo">
-                                <button class="panel-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    Environnement dédié
-                                </button>
-                            </div>
-                            <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="panel-body">
-                                    <p>Vous bénéficiez de ressources physiques allouées et d’un accès complet à votre serveur virtuel, pour héberger vos sites internet ou applications.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-header active" id="headingThree">
-                                <button class="panel-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    Simplicité et autonomie
-                                </button>
-                            </div>
-                            <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="panel-body">
-                                    <p>Les VPS vous permettent de vous libérer des contraintes matérielles (évolution des composants, défaillance technique, etc.) tout en bénéficiant d’un total contrôle sur votre serveur virtuel</p>
-                                </div>
-                            </div>
+                            <figure class="single_pricing_figure">
+                                <ul>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">4</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">8</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">10</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">10G</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">Linux</span></li>
+
+                                </ul>
+                                <div class="separator"></div>
+                            </figure>
+
+                            <footer class="pricing_footer text-center">
+                                <h3</span> 5.99<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <div class="smallseparator separetor_one"></div>
+                                <a href="https://www.helloasso.com/associations/synhostinger/paiements/vps-personal">Commander</a>
+                            </footer>
+
                         </div>
                     </div>
-                </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_pricing pricing_color_two wow fadeIn" data-wow-duration="1.2s">
+                            <div class="pricing_head text-center">
+                                <div class="icon_area p_icon_two">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h3>VPS Startup</h3>
+                                <div class="separator"></div>
+                            </div>
+                            <figure class="single_pricing_figure">
+                                <ul>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">6</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">16</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">30</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">10G</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">Linux</span></li>
+
+                                </ul>
+                                <div class="separator"></div>
+                            </figure>
+
+                            <footer class="pricing_footer text-center">
+                                <h3</span> 12.99<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <div class="smallseparator separetor_one"></div>
+                                <a href="https://www.helloasso.com/associations/synhostinger/paiements/vps-startup">Commander</a>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_pricing pricing_color_three wow fadeIn" data-wow-duration="1.8s">
+                            <div class="pricing_head text-center">
+                                <div class="icon_area p_icon_three">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h3>VPS Entreprise</h3>
+                                <div class="separator"></div>
+                            </div>
+                            <figure class="single_pricing_figure">
+                                <ul>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">8</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">32</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">50</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">10G</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">Linux</span></li>
+                                </ul>
+                                <div class="separator"></div>
+                            </figure>
+
+
+                            <footer class="pricing_footer text-center">
+                                <h3</span> 25.99<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <div class="smallseparator separetor_one"></div>
+                                <a href="https://www.helloasso.com/associations/synhostinger/paiements/vps-enterprise">Commander</a>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_pricing pricing_color_four wow fadeIn" data-wow-duration="2.3s">
+                            <div class="pricing_head text-center">
+                                <div class="icon_area p_icon_four">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h3>Offre custom</h3>
+                                <div class="separator"></div>
+                            </div>
+
+                            <figure class="single_pricing_figure">
+                                <ul>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">X</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">X</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">X</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">10G</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">X</span></li>
+                                </ul>
+                                <div class="separator"></div>
+                            </figure>
+
+                            <footer class="pricing_footer text-center">
+                                <p>Selon vos besoins !</p>
+                                <div class="smallseparator separetor_four"></div>
+                                <a href="mailto:support@synhostinger.com">Contactez-nous</a>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div><!-- End of pcining section -->
             </div>
         </div>
     </div>
+</section><!-- End of Pricing Section -->
