@@ -33,9 +33,13 @@ namespace Efredia.Controllers
             ViewBag.indepedanttitle = "Indépendant";
             ViewBag.indepedant = "Synhostinger héberge tous ses services sur son réseau (AS212816)";
             ViewBag.dellhptitle = "Serveur HP / Dell";
-            ViewBag.dellhp = "Synhostinger utilises du matériel de grand constructeur pour nous permettre de garantir la qualité de notre infrastructure.";
+            ViewBag.dellhp = "Synhostinger utilises du matériel de grand constructeur.";
             ViewBag.Replicationtitle = "Réplication";
-            ViewBag.Replication = "Nos sauvergardes se font uniquement sur des serveurs Français pour un respect total de vos données";
+            ViewBag.Replication = "Nos sauvergardes se font uniquement sur des serveurs Français.";
+            ViewBag.Support = "Support";
+            ViewBag.SupportText = "Notre équipe de techniciens qualifiés est à votre disposition ";
+            ViewBag.Banner = "Chez Synhostinger, nous fournissons le support est l'hébergement de qualité !";
+            ViewBag.activatemenu = "active";
             return View();
         }
 
@@ -73,7 +77,8 @@ namespace Efredia.Controllers
         {
             ViewBag.Title = "Performance et prix bas";
             ViewBag.VPSButton = "Précommander";
-            ViewBag.Project = "VPS Linux";
+            ViewBag.Project = "Synhostinger";
+            ViewBag.activatemenu = "active";
             ViewBag.indepedanttitle = "Indépendant";
             ViewBag.indepedant = "Synhostinger héberge tous ses services sur son réseau (AS212816)";
             ViewBag.dellhptitle = "Serveur HP / Dell";
@@ -89,8 +94,9 @@ namespace Efredia.Controllers
         {
             ViewBag.Title = "Le meilleur de l'hébergement";
             ViewBag.VPSButton = "Précommander";
-            ViewBag.Project = "Hébergement Web";
+            ViewBag.Project = "Synhostinger";
             ViewBag.indepedanttitle = "Indépendant";
+            ViewBag.activatemenu = "active";
             ViewBag.indepedant = "Synhostinger héberge tous ses services sur son réseau (AS212816)";
             ViewBag.dellhptitle = "Serveur HP / Dell";
             ViewBag.dellhp = "Synhostinger utilises du matériel de grand constructeur pour noous permettre de garantir la qualité de notre infrastructure.";
@@ -98,6 +104,7 @@ namespace Efredia.Controllers
             ViewBag.Replication = "Nos sauvergardes se font uniquement sur des serveurs Français pour un respect total de vos données";
             return View();
         }
+
 
     }
 }

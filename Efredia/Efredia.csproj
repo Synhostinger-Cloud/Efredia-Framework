@@ -122,7 +122,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cart\index.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="maintenance.aspx" />
@@ -149,6 +148,10 @@
     <Content Include="Models\hosting2019\img\feature-icons\1.png" />
     <Content Include="Models\hosting2019\img\feature-icons\2.png" />
     <Content Include="Models\hosting2019\img\feature-icons\3.png" />
+    <Content Include="Models\hosting2019\img\flocon1.gif" />
+    <Content Include="Models\hosting2019\img\flocon2.gif" />
+    <Content Include="Models\hosting2019\img\flocon3.gif" />
+    <Content Include="Models\hosting2019\img\flocon4.gif" />
     <Content Include="Models\hosting2019\img\logo.png" />
     <Content Include="Models\hosting2019\img\milestone-icons\1.png" />
     <Content Include="Models\hosting2019\img\milestone-icons\2.png" />
@@ -186,6 +189,7 @@
     <Content Include="Models\hosting2019\icon-fonts\fontawesome-webfont.eot" />
     <Content Include="Models\hosting2019\icon-fonts\fontawesome-webfont.woff" />
     <Content Include="Models\hosting2019\icon-fonts\fontawesome-webfont.woff2" />
+    <Content Include="Models\hosting2019\js\snow.js" />
     <Content Include="Models\hosting2019\Source\bootstrap-4.1.3-dist.zip" />
     <Content Include="Models\hosting2019\Source\default.aspx" />
     <Content Include="Models\hosting2019\Source\font-awesome-4.7.0.zip" />
@@ -194,35 +198,43 @@
     <Content Include="Models\hosting2019\Source\OwlCarousel2-2.3.4.zip" />
     <Content Include="Models\hosting2019\Source\sass\style.scss" />
     <Content Include="Models\hosting2019\default.aspx" />
-    <Content Include="Models\web2020\assets\css\font-awesome.min.css" />
-    <Content Include="Models\web2020\assets\css\main.css" />
-    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.svg" />
-    <Content Include="Models\web2020\assets\js\jquery.min.js" />
-    <Content Include="Models\web2020\assets\js\main.js" />
-    <Content Include="Models\web2020\assets\js\skel.min.js" />
-    <Content Include="Models\web2020\assets\js\util.js" />
-    <Content Include="Models\web2020\images\banner.jpg" />
-    <Content Include="Models\web2020\images\logo.png" />
-    <Content Include="Models\web2020\images\pic01.jpg" />
-    <Content Include="Models\web2020\images\pic02.jpg" />
-    <Content Include="Models\web2020\images\pic03.jpg" />
-    <Content Include="Models\web2020\images\pic04.jpg" />
-    <Content Include="Models\web2020\images\pic05.jpg" />
-    <Content Include="Models\web2020\images\pic06.jpg" />
-    <Content Include="Models\web2020\index.html" />
+    <Content Include="Models\v3\assets\css\bootstrap.min.css" />
+    <Content Include="Models\v3\assets\css\font-awesome.min.css" />
+    <Content Include="Models\v3\assets\css\fonticons.css" />
+    <Content Include="Models\v3\assets\css\plugins.css" />
+    <Content Include="Models\v3\assets\css\responsive.css" />
+    <Content Include="Models\v3\assets\css\style.css" />
+    <Content Include="Models\v3\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Models\v3\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Models\v3\assets\fonts\Linearicons-Free.svg" />
+    <Content Include="Models\v3\assets\fonts\stylesheet.css" />
+    <Content Include="Models\v3\assets\images\commnsbg.jpg" />
+    <Content Include="Models\v3\assets\images\homebg.jpg" />
+    <Content Include="Models\v3\assets\images\logo.png" />
+    <Content Include="Models\v3\assets\images\old.png" />
+    <Content Include="Models\v3\assets\images\petern.png" />
+    <Content Include="Models\v3\assets\images\preloading.gif" />
+    <Content Include="Models\v3\assets\images\pricingbg.jpg" />
+    <Content Include="Models\v3\assets\images\team1.jpg" />
+    <Content Include="Models\v3\assets\images\team3.jpg" />
+    <Content Include="Models\v3\assets\images\team4.jpg" />
+    <Content Include="Models\v3\assets\js\jquery.easypiechart.min.js" />
+    <Content Include="Models\v3\assets\js\main.js" />
+    <Content Include="Models\v3\assets\js\plugins.js" />
+    <Content Include="Models\v3\assets\js\vendor\bootstrap.min.js" />
+    <Content Include="Models\v3\assets\js\vendor\jquery-1.11.2.min.js" />
+    <Content Include="Models\v3\assets\js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="Models\v3\favicon.ico" />
+    <Content Include="Models\v3\index.html" />
+    <Content Include="Models\v3\Readme.txt" />
+    <Content Include="pdf\Default.aspx" />
     <Content Include="synhicon_color.ico" />
     <Content Include="TextTemplate.ico" />
+    <Content Include="ticket.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="cart\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="cart\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\HomeController.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
@@ -235,13 +247,6 @@
     </Compile>
     <Compile Include="maintenance.aspx.designer.cs">
       <DependentUpon>maintenance.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\aspx\Default.Master.cs">
-      <DependentUpon>Default.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Models\aspx\Default.Master.designer.cs">
-      <DependentUpon>Default.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\aspx\Maintenance.Master.cs">
       <DependentUpon>Maintenance.Master</DependentUpon>
@@ -285,6 +290,13 @@
     <Compile Include="Models\hosting2019\Source\default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pdf\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pdf\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -304,15 +316,30 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.eot" />
-    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.woff" />
-    <Content Include="Models\web2020\assets\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Models\web2020\assets\fonts\FontAwesome.otf" />
     <Content Include="Models\aspx\redirect_302.Master" />
     <Content Include="Models\aspx\Maintenance.Master" />
-    <Content Include="Models\aspx\Default.Master" />
     <Content Include="app.config" />
+    <Content Include="Models\v3\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Models\v3\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Models\v3\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Models\v3\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\FontAwesome.otf" />
+    <Content Include="Models\v3\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Models\v3\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Models\v3\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Models\v3\assets\fonts\lato-bold-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\lato-heavy-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\lato-heavyitalic-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\lato-light-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\lato-medium-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\lato-regular-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\lato-semibold-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\lato-thin-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\lato-thinitalic-webfont.woff2" />
+    <Content Include="Models\v3\assets\fonts\Linearicons-Free.eot" />
+    <Content Include="Models\v3\assets\fonts\Linearicons-Free.ttf" />
+    <Content Include="Models\v3\assets\fonts\Linearicons-Free.woff" />
+    <Content Include="Models\v3\assets\fonts\Linearicons-Free.woff2" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml">
@@ -330,6 +357,8 @@
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Models\aspx\store.Master" />
     <Content Include="Views\Shared\template.cshtml" />
+    <Content Include="pdf\cookies.pdf" />
+    <Content Include="pdf\Mentions_Legales.pdf" />
     <None Include="Properties\PublishProfiles\IIS-SRV1.pubxml" />
     <Content Include="Views\Home\webhosting.cshtml" />
     <None Include="Web.Debug.config">
