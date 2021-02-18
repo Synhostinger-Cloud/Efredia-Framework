@@ -203,15 +203,24 @@
     <Content Include="Models\v3\assets\css\fonticons.css" />
     <Content Include="Models\v3\assets\css\plugins.css" />
     <Content Include="Models\v3\assets\css\responsive.css" />
+    <Content Include="Models\v3\assets\css\sliders.css" />
     <Content Include="Models\v3\assets\css\style.css" />
     <Content Include="Models\v3\assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Models\v3\assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Models\v3\assets\fonts\Linearicons-Free.svg" />
     <Content Include="Models\v3\assets\fonts\stylesheet.css" />
+    <Content Include="Models\v3\assets\images\89593468-0.jpeg" />
     <Content Include="Models\v3\assets\images\commnsbg.jpg" />
     <Content Include="Models\v3\assets\images\homebg.jpg" />
+    <Content Include="Models\v3\assets\images\icon_social.png" />
     <Content Include="Models\v3\assets\images\logo.png" />
     <Content Include="Models\v3\assets\images\old.png" />
+    <Content Include="Models\v3\assets\images\partners\1.svg" />
+    <Content Include="Models\v3\assets\images\partners\2.svg" />
+    <Content Include="Models\v3\assets\images\partners\3.svg" />
+    <Content Include="Models\v3\assets\images\partners\4.png" />
+    <Content Include="Models\v3\assets\images\partners\5.png" />
+    <Content Include="Models\v3\assets\images\partners\89593468-0.jpeg" />
     <Content Include="Models\v3\assets\images\petern.png" />
     <Content Include="Models\v3\assets\images\preloading.gif" />
     <Content Include="Models\v3\assets\images\pricingbg.jpg" />
@@ -219,6 +228,7 @@
     <Content Include="Models\v3\assets\images\team3.jpg" />
     <Content Include="Models\v3\assets\images\team4.jpg" />
     <Content Include="Models\v3\assets\js\jquery.easypiechart.min.js" />
+    <Content Include="Models\v3\assets\js\jquery.js" />
     <Content Include="Models\v3\assets\js\main.js" />
     <Content Include="Models\v3\assets\js\plugins.js" />
     <Content Include="Models\v3\assets\js\vendor\bootstrap.min.js" />
@@ -238,6 +248,7 @@
     <Compile Include="Controllers\HomeController.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Cors\AllowCrossSiteAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -357,10 +368,11 @@
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Models\aspx\store.Master" />
     <Content Include="Views\Shared\template.cshtml" />
-    <Content Include="pdf\cookies.pdf" />
-    <Content Include="pdf\Mentions_Legales.pdf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Properties\PublishProfiles\IIS-SRV1.pubxml" />
     <Content Include="Views\Home\webhosting.cshtml" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

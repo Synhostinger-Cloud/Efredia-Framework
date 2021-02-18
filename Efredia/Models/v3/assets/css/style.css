@@ -225,7 +225,7 @@ p:last-child {
 Section
 */
 .sections {
-    margin-top:50px;
+    margin-top:0px;
     overflow: hidden;
 }
 .sections.footer {

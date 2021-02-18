@@ -1,4 +1,5 @@
-﻿<section id="service" class="service">
+﻿<!--INDEX PAGE /view/Home/vps.cshtml-->
+<section id="service" class="service">
     <div class="container">
         <div class="row">
             <div class="main_service text-center">
@@ -8,8 +9,8 @@
                             <a href=""><i class="fa fa-server"></i></a>
                         </div>
                         <div class="single_service_deatels">
-                            <h4>Serveurs</h4>
-                            <p>l'ensemble de vos VPS sont hébergé en France dans l'oise. Deux points disponible Centre ou Nord de l'oise</p>
+                            <h4>@ViewBag.col1title</h4>
+                            <p>@ViewBag.col1text</p>
                         </div>
                     </div>
                 </div>
@@ -19,8 +20,8 @@
                             <a href=""><i class="fa fa-sellsy"></i></a>
                         </div>
                         <div class="single_service_deatels">
-                            <h4>Notre réseau</h4>
-                            <p>pour vos VPS nous avons donc des IPv6 que nous gérons nous même est des IPv4 sur le réseau OVHCloud</p>
+                            <h4>@ViewBag.col2title</h4>
+                            <p>@ViewBag.col2text</p>
                         </div>
                     </div>
                 </div>
@@ -30,8 +31,8 @@
                             <a href=""><i class="fa fa-hdd-o"></i></a>
                         </div>
                         <div class="single_service_deatels">
-                            <h4>Disque SAS</h4>
-                            <p>Chaque donnée est répliquée sur plusieurs de nos disques, qui sont en raid 10 ou Raid 5</p>
+                            <h4>@ViewBag.col3title</h4>
+                            <p>@ViewBag.col3text</p>
                         </div>
                     </div>
                 </div>
@@ -41,15 +42,15 @@
                             <a href=""><i class="fa fa-comments"></i></a>
                         </div>
                         <div class="single_service_deatels">
-                            <h4>Support</h4>
-                            <p>Notre équipe de techniciens savent les enjeux d'un VPS. c'est pour cela qu'ils sont à votre disponibilité</p>
+                            <h4>@ViewBag.col4title</h4>
+                            <p>@ViewBag.col4text</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section><!-- End of service Section -->
+</section>
 <section id="pricingtop" class="pricingtop">
     <div class="overlay">
         <div class="container">
@@ -69,25 +70,26 @@
                                 <div class="icon_area p_icon_one">
                                     <i class="fa fa-star"></i>
                                 </div>
-                                <h3>VPS Personal</h3>
-                                <div class="separator"></div>
+                                <h3>
+                                    @ViewBag.VPS1<h3>
+                                        <div class="separator"></div>
                             </div>
                             <figure class="single_pricing_figure">
                                 <ul>
-                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">4</span></li>
-                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">8</span></li>
-                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">10</span></li>
-                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">10G</span></li>
-                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">Linux</span></li>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">@ViewBag.vcpu1</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">@ViewBag.ram1</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">@ViewBag.disk1</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">@ViewBag.ddos1</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">@ViewBag.os1</span></li>
 
                                 </ul>
                                 <div class="separator"></div>
                             </figure>
 
                             <footer class="pricing_footer text-center">
-                                <h3</span> 5.99<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <h3</span>@ViewBag.price1<span class="dolor">€ <span class="month">/Mois  </span></h3>
                                 <div class="smallseparator separetor_one"></div>
-                                <a href="https://www.helloasso.com/associations/synhostinger/paiements/vps-personal">Commander</a>
+                                <a href="@ViewBag.url1">Commander</a>
                             </footer>
 
                         </div>
@@ -99,25 +101,25 @@
                                 <div class="icon_area p_icon_two">
                                     <i class="fa fa-star"></i>
                                 </div>
-                                <h3>VPS Startup</h3>
-                                <div class="separator"></div>
+                                <h3>
+                                    @ViewBag.VPS2<h3>
+                                        <div class="separator"></div>
                             </div>
                             <figure class="single_pricing_figure">
                                 <ul>
-                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">6</span></li>
-                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">16</span></li>
-                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">30</span></li>
-                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">10G</span></li>
-                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">Linux</span></li>
-
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">@ViewBag.vcpu2</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">@ViewBag.ram2</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">@ViewBag.disk2</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">@ViewBag.ddos2</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">@ViewBag.os2</span></li>
                                 </ul>
                                 <div class="separator"></div>
                             </figure>
 
                             <footer class="pricing_footer text-center">
-                                <h3</span> 12.99<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <h3</span>@ViewBag.price2<span class="dolor">€ <span class="month">/Mois  </span></h3>
                                 <div class="smallseparator separetor_one"></div>
-                                <a href="https://www.helloasso.com/associations/synhostinger/paiements/vps-startup">Commander</a>
+                                <a href="@ViewBag.url2">Commander</a>
                             </footer>
 
                         </div>
@@ -129,25 +131,26 @@
                                 <div class="icon_area p_icon_three">
                                     <i class="fa fa-star"></i>
                                 </div>
-                                <h3>VPS Entreprise</h3>
-                                <div class="separator"></div>
+                                <h3>
+                                    @ViewBag.VPS3<h3>
+                                        <div class="separator"></div>
                             </div>
                             <figure class="single_pricing_figure">
                                 <ul>
-                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">8</span></li>
-                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">32</span></li>
-                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">50</span></li>
-                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">10G</span></li>
-                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">Linux</span></li>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">@ViewBag.vcpu3</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">@ViewBag.ram3</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">@ViewBag.disk3</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">@ViewBag.ddos3</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">@ViewBag.os3</span></li>
                                 </ul>
                                 <div class="separator"></div>
                             </figure>
 
 
                             <footer class="pricing_footer text-center">
-                                <h3</span> 25.99<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <h3</span>@ViewBag.price3<span class="dolor">€ <span class="month">/Mois  </span></h3>
                                 <div class="smallseparator separetor_one"></div>
-                                <a href="https://www.helloasso.com/associations/synhostinger/paiements/vps-enterprise">Commander</a>
+                                <a href="@ViewBag.url3">Commander</a>
                             </footer>
 
                         </div>
@@ -176,14 +179,15 @@
 
                             <footer class="pricing_footer text-center">
                                 <p>Selon vos besoins !</p>
-                                <div class="smallseparator separetor_four"></div>
-                                <a href="mailto:support@synhostinger.com">Contactez-nous</a>
+                                <h3</span>@ViewBag.pricecustom<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <div class="smallseparator separetor_one"></div>
+                                <a href="@ViewBag.urlcustom">Commander</a>
                             </footer>
                         </div>
                     </div>
 
-                </div><!-- End of pcining section -->
+                </div>
             </div>
         </div>
     </div>
-</section><!-- End of Pricing Section -->
+</section>
