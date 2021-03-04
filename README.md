@@ -1,5 +1,3 @@
-# ![logo](https://www.synhostinger.com/logo)
-
 # Efredia - Framework
 
 - Page de Maintenance avec Auto-Rewrite
